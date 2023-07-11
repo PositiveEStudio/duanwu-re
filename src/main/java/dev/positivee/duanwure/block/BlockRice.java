@@ -10,7 +10,6 @@ import net.minecraft.world.level.material.PushReaction;
 
 public class BlockRice extends CropBlock
 {
-
 	public BlockRice()
 	{
 		super(Properties.of().mapColor(MapColor.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP).pushReaction(PushReaction.DESTROY));
