@@ -4,7 +4,6 @@ import dev.positivee.duanwure.DuanWuRE;
 import dev.positivee.duanwure.item.ItemRegistry;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,6 +19,9 @@ public class CreativeTabRegistry
 			.displayItems((parameter, output) ->
 			{
 				output.accept(ItemRegistry.RICE_SEED.get());
+				output.accept(ItemRegistry.REED_SEED.get());
+				output.accept(ItemRegistry.REED_LEAF.get());
+				output.accept(ItemRegistry.RICE.get());
 			})
 			.build()
 	);

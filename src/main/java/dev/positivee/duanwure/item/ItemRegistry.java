@@ -13,4 +13,8 @@ public class ItemRegistry
 	public static final DeferredRegister<Item> ITEM = DeferredRegister.create(ForgeRegistries.ITEMS, DuanWuRE.MODID);
 
 	public static final RegistryObject<Item> RICE_SEED = ITEM.register("rice_seed", () -> new BlockItem(BlockRegistry.RICE.get(), new Item.Properties()));
+	public static final RegistryObject<Item> REED_SEED = ITEM.register("reed_seed", () -> new BlockItem(BlockRegistry.REED.get(), new Item.Properties()));
+
+	public static final RegistryObject<Item> RICE = ITEM.register("rice", () -> new Item(new Item.Properties()));
+	public static final RegistryObject<Item> REED_LEAF = ITEM.register("reed_leaf", () -> new Item(new Item.Properties()));
 }

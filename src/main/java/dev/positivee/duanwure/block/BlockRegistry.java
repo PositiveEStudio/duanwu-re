@@ -11,4 +11,5 @@ public class BlockRegistry
 	public static final DeferredRegister<Block> BLOCK = DeferredRegister.create(ForgeRegistries.BLOCKS, DuanWuRE.MODID);
 
 	public static final RegistryObject<Block> RICE = BLOCK.register("rice", BlockRice::new);
+	public static final RegistryObject<Block> REED = BLOCK.register("reed", BlockReed::new);
 }
