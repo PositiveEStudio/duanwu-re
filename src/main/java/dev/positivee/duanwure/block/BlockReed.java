@@ -1,5 +1,6 @@
 package dev.positivee.duanwure.block;
 
+import dev.positivee.duanwure.item.ItemRegistry;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
@@ -13,7 +14,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class BlockReed extends CropBlock
-{//TODO:解决上半截无法选中的问题
+{
 	private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
 			Block.box(0.0D, 0.0D, 0.0D, 16.0D, 4.0D, 16.0D),
 			Block.box(0.0D, 0.0D, 0.0D, 16.0D, 8.0D, 16.0D),
@@ -32,7 +33,7 @@ public class BlockReed extends CropBlock
 	@Override
 	protected ItemLike getBaseSeedId()
 	{
-		return super.getBaseSeedId();
+		return ItemRegistry.REED_SEED.get();
 	}
 
 	@Override
