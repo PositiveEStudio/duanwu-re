@@ -15,7 +15,7 @@ public class CreativeTabRegistry
 
 	public static final RegistryObject<CreativeModeTab> DUANWURE = CREATIVE_MODE_TAB.register("duanwure", () -> CreativeModeTab.builder()
 			.title(Component.translatable("itemGroup.duanwure"))
-			.icon(() -> Items.AIR.getDefaultInstance())
+			.icon(Items.AIR::getDefaultInstance)
 			.displayItems((parameter, output) ->
 			{
 				output.accept(ItemRegistry.RICE_SEED.get());
