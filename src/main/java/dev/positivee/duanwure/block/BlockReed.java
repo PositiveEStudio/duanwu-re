@@ -31,6 +31,48 @@ public class BlockReed extends CropBlock
 	}
 
 	@Override
+	protected boolean mayPlaceOn(BlockState pState, BlockGetter pLevel, BlockPos pPos)
+	{
+//		return super.mayPlaceOn(pState, pLevel, pPos) || (pState.is(BlockRegistry.REED.get()) && pState.getValue(AGE) >= 5);
+		return super.mayPlaceOn(pState, pLevel, pPos);
+	}
+
+	/*@Override
+	public boolean isBonemealSuccess(Level pLevel, RandomSource pRandom, BlockPos pPos, BlockState pState)
+	{
+		return this.isValidBonemealTarget(pLevel, pPos, pState, false);
+	}
+
+	@Override
+	public boolean isValidBonemealTarget(LevelReader pLevel, BlockPos pPos, BlockState pState, boolean pIsClient)
+	{
+		int age = pState.getValue(AGE);
+		BlockState belowState = pLevel.getBlockState(pPos.below());
+		BlockState aboveState = pLevel.getBlockState(pPos.above());
+
+		if (belowState.is(Blocks.FARMLAND))
+		{
+			return (age < 5) || (age < 7 && aboveState.is(BlockRegistry.REED.get()) && aboveState.getValue(AGE) > 3);
+		}
+
+		if (belowState.is(BlockRegistry.REED.get()))
+		{
+			return age < 5;
+		}
+
+		return super.isValidBonemealTarget(pLevel, pPos, pState, pIsClient);
+	}
+
+	@Override
+	public void growCrops(Level pLevel, BlockPos pPos, BlockState pState)
+	{
+		BlockState belowState = pLevel.getBlockState(pPos.below());
+		int age = this.getAge(pState);
+		boolean isUpper = belowState.is(BlockRegistry.REED.get());
+
+	}*/
+
+	@Override
 	protected ItemLike getBaseSeedId()
 	{
 		return ItemRegistry.REED_SEED.get();
