@@ -3,6 +3,7 @@ package dev.positivee.duanwure;
 import com.mojang.logging.LogUtils;
 import dev.positivee.duanwure.block.BlockRegistry;
 import dev.positivee.duanwure.creative.CreativeTabRegistry;
+import dev.positivee.duanwure.data.DataGen;
 import dev.positivee.duanwure.item.ItemRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -15,15 +16,16 @@ public class DuanWuRE
 {
 	public static final String MODID = "duanwure";
 	private static final Logger LOGGER = LogUtils.getLogger();
+	private static IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
 
 	public DuanWuRE()
 	{
-		IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
 		MinecraftForge.EVENT_BUS.register(this);
 
 		ItemRegistry.ITEM.register(modEventBus);
 		BlockRegistry.BLOCK.register(modEventBus);
 		CreativeTabRegistry.CREATIVE_MODE_TAB.register(modEventBus);
+		modEventBus.addListener(DataGen::gatherData);
 	}
 }
