@@ -1,7 +1,8 @@
 {
-  "itemGroup.duanwure": "DuanWu RE",
-
-  "item.duanwure.rice_seed": "Rice Seed",
-
-  "block.duanwure.rice": "Rice"
+  "block.duanwure.reed": "Reed Seed",
+  "block.duanwure.rice": "Rice Seed",
+  "item.duanwure.paddy": "Paddy",
+  "item.duanwure.reed_leaf": "Reed Leaf",
+  "item.duanwure.rice": "Rice",
+  "itemGroup.duanwure": "Duanwu RE"
 }

@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "duanwure:block/rice/rice_stage0"
+    },
+    "age=1": {
+      "model": "duanwure:block/rice/rice_stage1"
+    },
+    "age=2": {
+      "model": "duanwure:block/rice/rice_stage2"
+    },
+    "age=3": {
+      "model": "duanwure:block/rice/rice_stage3"
+    },
+    "age=4": {
+      "model": "duanwure:block/rice/rice_stage4"
+    },
+    "age=5": {
+      "model": "duanwure:block/rice/rice_stage5"
+    },
+    "age=6": {
+      "model": "duanwure:block/rice/rice_stage6"
+    },
+    "age=7": {
+      "model": "duanwure:block/rice/rice_stage7"
+    }
+  }
+}
