@@ -17,4 +17,5 @@ public class ItemRegistry
 
 	public static final RegistryObject<Item> RICE = ITEM.register("rice", () -> new Item(new Item.Properties()));
 	public static final RegistryObject<Item> REED_LEAF = ITEM.register("reed_leaf", () -> new Item(new Item.Properties()));
+	public static final RegistryObject<Item> PADDY = ITEM.register("paddy", () -> new Item(new Item.Properties()));
 }

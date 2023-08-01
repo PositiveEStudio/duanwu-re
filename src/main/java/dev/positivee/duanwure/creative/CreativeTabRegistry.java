@@ -24,6 +24,7 @@ public class CreativeTabRegistry
 				output.accept(ItemRegistry.REED_SEED.get());
 				output.accept(ItemRegistry.REED_LEAF.get());
 				output.accept(ItemRegistry.RICE.get());
+				output.accept(ItemRegistry.PADDY.get());
 			})
 			.build()
 	);
