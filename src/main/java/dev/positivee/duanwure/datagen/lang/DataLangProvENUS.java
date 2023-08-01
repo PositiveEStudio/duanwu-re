@@ -26,5 +26,6 @@ public class DataLangProvENUS extends LanguageProvider
 //		this.add(ItemRegistry.REED_SEED.get(), "Reed Seed");
 		this.add(ItemRegistry.REED_LEAF.get(), "Reed Leaf");
 		this.add(ItemRegistry.PADDY.get(), "Paddy");
+		this.add(ItemRegistry.NORMAL_ZONGZI.get(), "Normal ZongZi");
 	}
 }

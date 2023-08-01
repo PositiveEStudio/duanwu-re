@@ -25,5 +25,6 @@ public class DataLangProvZHCN extends LanguageProvider
 //		this.add(ItemRegistry.REED_SEED.get(), "Reed Seed");
 		this.add(ItemRegistry.REED_LEAF.get(), "芦苇叶");
 		this.add(ItemRegistry.PADDY.get(), "水稻");
+		this.add(ItemRegistry.NORMAL_ZONGZI.get(), "普通粽子");
 	}
 }

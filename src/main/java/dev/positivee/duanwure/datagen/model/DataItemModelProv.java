@@ -21,5 +21,6 @@ public class DataItemModelProv extends ItemModelProvider
 		this.basicItem(ItemRegistry.RICE_SEED.get());
 		this.basicItem(ItemRegistry.REED_LEAF.get());
 		this.basicItem(ItemRegistry.PADDY.get());
+		this.basicItem(ItemRegistry.NORMAL_ZONGZI.get());
 	}
 }
