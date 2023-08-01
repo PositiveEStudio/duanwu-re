@@ -1,4 +1,4 @@
-package dev.positivee.duanwure.data.lang;
+package dev.positivee.duanwure.datagen.lang;
 
 import dev.positivee.duanwure.block.BlockRegistry;
 import dev.positivee.duanwure.item.ItemRegistry;
@@ -24,5 +24,6 @@ public class DataLangProvZHCN extends LanguageProvider
 //		this.add(ItemRegistry.RICE_SEED.get(), "Rice Seed");
 //		this.add(ItemRegistry.REED_SEED.get(), "Reed Seed");
 		this.add(ItemRegistry.REED_LEAF.get(), "芦苇叶");
+		this.add(ItemRegistry.PADDY.get(), "水稻");
 	}
 }

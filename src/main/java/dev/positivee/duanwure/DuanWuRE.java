@@ -3,7 +3,7 @@ package dev.positivee.duanwure;
 import com.mojang.logging.LogUtils;
 import dev.positivee.duanwure.block.BlockRegistry;
 import dev.positivee.duanwure.creative.CreativeTabRegistry;
-import dev.positivee.duanwure.data.DataGen;
+import dev.positivee.duanwure.datagen.DataGen;
 import dev.positivee.duanwure.item.ItemRegistry;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
