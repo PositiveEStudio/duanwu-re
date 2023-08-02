@@ -20,6 +20,8 @@ public class CreativeTabRegistry
 			.displayItems((parameter, output) ->
 			{
 				output.accept(ItemRegistry.NORMAL_ZONGZI.get());
+				output.accept(ItemRegistry.SUGER_ZONGZI.get());
+				output.accept(ItemRegistry.MEAT_ZONGZI.get());
 				output.accept(ItemRegistry.RICE_SEED.get());
 				output.accept(ItemRegistry.REED_SEED.get());
 				output.accept(ItemRegistry.REED_LEAF.get());

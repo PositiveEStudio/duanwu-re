@@ -18,5 +18,8 @@ public class ItemRegistry
 	public static final RegistryObject<Item> RICE = ITEM.register("rice", () -> new Item(new Item.Properties()));
 	public static final RegistryObject<Item> REED_LEAF = ITEM.register("reed_leaf", () -> new Item(new Item.Properties()));
 	public static final RegistryObject<Item> PADDY = ITEM.register("paddy", () -> new Item(new Item.Properties()));
-	public static final RegistryObject<Item> NORMAL_ZONGZI = ITEM.register("normal_zongzi", () -> new ItemNormalZongZi(new Item.Properties().food(FoodRegistry.NORMAL_ZONGZI)));
+	public static final RegistryObject<Item> NORMAL_ZONGZI = ITEM.register("normal_zongzi", () -> new ItemZongZi(new Item.Properties().food(FoodRegistry.NORMAL_ZONGZI)));
+	public static final RegistryObject<Item> SUGER_ZONGZI = ITEM.register("suger_zongzi", () -> new ItemZongZi(new Item.Properties().food(FoodRegistry.SUGER_ZONGZI)));
+	public static final RegistryObject<Item> MEAT_ZONGZI = ITEM.register("meat_zongzi", () -> new ItemZongZi(new Item.Properties().food(FoodRegistry.MEAT_ZONGZI)));
+
 }
